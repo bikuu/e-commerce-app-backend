@@ -30,9 +30,11 @@ const ProductSchema = new Schema({
 
     created_by: {
         type: ObjectId,
-        required: true
+        required: true,
+        ref:"User"
 
     }
+
 
 });
 
